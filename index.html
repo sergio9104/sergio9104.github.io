@@ -2,18 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width = device-width, initial-scale = 1">
-    <title>Sergio Valencia PSP</title>
-    <link type="text/css" rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans" />
-    <link
-        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    <meta name ="viewport" content="width = device-width, initial-scale = 1" >
+    <title>Sergio Valencia / CV</title>
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
-        integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="./favicon.ico">
 </head>
+
 <body>
     <div class="background gradient">
         <ul class="bg-bubbles">
@@ -32,20 +31,20 @@
     <div class="page">
         <header>
             <nav>
-                <a href="#about">
+                <a href="#about" class="selected" id='getAbout'>
                     <span class="fas fa-user"></span>
                     <span class="link">About</span></a>
-                <a href="#resume">
+                <a href="#resume" id='getResume'>
                     <span class="fas fa-file"></span>
                     <span class="link">Resume</span></a></a>
-                <a href="#works">
+                <a href="#works" id='getWorks'>
                     <span class="fas fa-paint-brush"></span>
                     <span class="link">Works</span></a></a>
-                <a href="#blog">
+                <a href="#blog" id='getBlog'>
                     <span class="fas fa-comment-alt"></span>
                     <span class="link">Blog</span></a>
                 </a>
-                <a href="#contact">
+                <a href="#contact" id='getContact'>
                     <span class="fas fa-at"></span>
                     <span class="link">Contact</span></a>
                 </a>
@@ -56,11 +55,11 @@
                 <div class="profile-background"></div>
                 <div>
                     <div class="profile-image">
-                        <img src="./img/profile.png" alt="Ryan Adlard">
+                        <img id="profile-img" src="./img/profile.png" alt="Ryan Adlard">
                     </div>
-                    <h1 class="profile-name">Ryan Adlard</h1>
+                    <h1 class="profile-name" id="nombre">Ryan Adlard</h1>
                     <h2 class="profile-profession">Web Designer</h2>
-                    <div class="profile-social">
+                    <div class="profile-social" id="profile-social">
                         <a href="www.dribbble.com" class="fab fa-dribbble"></a>
                         <a href="www.twitter.com" class="fab fa-twitter"></a>
                         <a href="www.github.com" class="fab fa-github"></a>
@@ -69,31 +68,31 @@
                     </div>
                 </div>
                 <div class="profile-buttons">
-                    <a href="/myCV.txt" download>DOWNLOAD CV <i class="fas fa-download"></i></a>
+                    <a href="./myCV.txt" download>DOWNLOAD CV <i class="fas fa-download"></i></a>
                     <a href="#contact">CONTACT ME <i class="fas fa-arrow-right"></i></a>
                 </div>
             </section>
-            <div id="about" class="about">
+            <div id="about" class="about view">
                 <article class="about-aboutMe">
                     <h3 class="title">About Me</h3>
                     <div class="line-left">
-                        <p>I am Ryan Adlard, web designer from USA, California. I have rich experience in web site
+                        <p>Web designer, I have rich experience in web site
                             design
                             and
                             building and customization, also I am good at wordpress. I love to talk with you about our
                             unique.</p>
                         <div>
                             <div>
-                                <span>AGE . . . . </span>24
+                                <span class="about-aboutMe_title">AGE </span> <div id="age-data">24</div> 
                             </div>
                             <div>
-                                <span>RESIDENCE . . . . </span>USA
+                                <span class="about-aboutMe_title">RESIDENCE </span> <div id="residence-data">Ironville, United States</div>
                             </div>
                             <div>
-                                <span>FREELANCE . . . . </span>Available
+                                <span class="about-aboutMe_title">EMAIL </span> <div id="email-data">Available</div>
                             </div>
                             <div>
-                                <span>ADDRESS . . . . </span>California, USA
+                                <span class="about-aboutMe_title">CELL </span> <div id="cell-data">California, USA</div>
                             </div>
                         </div>
                     </div>
@@ -122,6 +121,9 @@
                             <p>Developing memorable and unique mobile android, ios games.</p>
                         </article>
                     </div>
+
+
+
                 </section>
                 <section class="about-pricing">
                     <h3 class="title">Pricing</h3>
@@ -155,6 +157,7 @@
                             <a href="">BUY PRO <span class="fas fa-level-up-alt"></span></a>
                         </div>
                     </div>
+
                 </section>
                 <section class="about-fun">
                     <h3 class="title">Fun Fact</h3>
@@ -184,6 +187,10 @@
                         <a href="www.google.com" class="line-left"> <img src="./img/client_2.png" alt="coffee"></a>
                         <a href="www.google.com" class="line-left"><img src="./img/client_3.png" alt="coffee"></a>
                         <a href="www.google.com" class="line-left"> <img src="./img/client_4.png" alt="coffee"></a>
+
+
+
+
                     </div>
                 </section>
             </div>
@@ -210,6 +217,7 @@
                             <h6 class="company">ABC INC.</h6>
                             <p>Optimize website performance using latest technology.</p>
                         </article>
+
                     </section>
                     <section class="resume-line line-left">
                         <h4 class="line-down"> <i class="fas fa-university"></i> Education</h4>
@@ -349,6 +357,7 @@
                             <h5>VIDEO</h5>
                         </div>
                     </div>
+
                 </div>
             </section>
             <section id="blog" class="blog">
@@ -379,22 +388,22 @@
                     <h3 class="title">Get in Touch</h3>
                     <div class="contact-information line-left">
                         <div>
-                            <span>ADDRESS . . . . </span> California, USA
+                            <span>ADDRESS</span> <div id="residence-data2">Ironville, United States</div>
                         </div>
                         <div>
-                            <span>EMAIL . . . . </span> adlard@example.com
+                            <span>EMAIL</span> <div id="email-data2">adlard@example.com</div>
                         </div>
                         <div>
-                            <span>PHONE . . . . </span> +123 654 78900
+                            <span>PHONE</span><div id="cell-data2">California, USA</div>
                         </div>
                         <div>
-                            <span>FREELANCE . . . . </span> Available
+                            <span>FREELANCE</span> <div>Available</div> 
                         </div>
                     </div>
                 </section>
                 <section class="contact-form">
                     <h3 class="title">Contact Form</h3>
-                    <form class="line-left" action="mailto:someone@example.com" method="post">
+                    <form class="line-left" id="form" action="mailto:someone@example.com" method="post">
                         <div class="double-line">
                             <div>
                                 <input type="text" placeholder="Full Name" id="name" name="name" required>
@@ -413,7 +422,8 @@
             </div>
         </main>
     </div>
+
     <script src="script.js"></script>
 </body>
-</html>
 
+</html>
